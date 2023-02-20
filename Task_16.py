@@ -9,7 +9,7 @@ def create_number(phrase):
     number = int(input(phrase))
     return number
 def create_array(num1,num2):
-    collect = [(lambda i: randint(1, 10))(i) for i in range(num1)]  # заполнение массива случайными числами
+    collect = [(lambda i: randint(1, num2))(i) for i in range(num1)]  # заполнение массива случайными числами
     return collect
 
 def find_quantity_number(arr, num_t):
